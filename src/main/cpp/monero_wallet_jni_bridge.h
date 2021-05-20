@@ -150,7 +150,13 @@ JNIEXPORT jstring JNICALL Java_monero_wallet_MoneroWalletFull_exportKeyImagesJni
 
 JNIEXPORT jstring JNICALL Java_monero_wallet_MoneroWalletFull_importKeyImagesJni(JNIEnv *, jobject, jstring);
 
-JNIEXPORT jstring JNICALL Java_monero_wallet_MoneroWalletFull_sendTxsJni(JNIEnv *, jobject, jstring);
+JNIEXPORT void JNICALL Java_monero_wallet_MoneroWalletFull_freezeJni(JNIEnv *, jobject, jstring);
+
+JNIEXPORT void JNICALL Java_monero_wallet_MoneroWalletFull_thawJni(JNIEnv *, jobject, jstring);
+
+JNIEXPORT bool JNICALL Java_monero_wallet_MoneroWalletFull_isFrozenJni(JNIEnv *, jobject, jstring);
+
+JNIEXPORT jstring JNICALL Java_monero_wallet_MoneroWalletFull_createTxsJni(JNIEnv *, jobject, jstring);
 
 JNIEXPORT jstring JNICALL Java_monero_wallet_MoneroWalletFull_sweepUnlockedJni(JNIEnv *, jobject, jstring);
 
